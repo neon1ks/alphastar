@@ -548,7 +548,7 @@ a:focus {
 	clear: both;
 }
 p {
-	margin: 0 0 9px;
+  margin: 0 0 10px;
 }
 .lead {
 	margin-bottom: 18px;
