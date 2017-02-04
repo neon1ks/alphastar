@@ -7802,6 +7802,12 @@ li {
 	word-wrap: break-word;
 }
 
+div[class^=leading] {
+  margin-top: 50px;
+}
+.leading-0 {
+  margin-top: 0 !important;
+}
 @media (max-width: 767px) {
   .navbar-nav .open .dropdown-menu {
     position: static;
