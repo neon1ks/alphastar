@@ -831,10 +831,9 @@ dd {
 	margin-left: 180px;
 }
 hr {
-	margin: 18px 0;
-	border: 0;
-	border-top: 1px solid #eee;
-	border-bottom: 1px solid #fff;
+  margin: 18px 0;
+  border: 0;
+  border-top: 1px solid #f8f5f0;
 }
 abbr[title],
 abbr[data-original-title] {
