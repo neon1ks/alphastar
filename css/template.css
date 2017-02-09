@@ -8176,3 +8176,6 @@ a:focus#back-top {
 .table-compact {
   width: auto;
 }
+.readmore {
+	margin-top: 20px;
+}
