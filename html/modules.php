@@ -44,11 +44,11 @@ function modChrome_well($module, &$params, &$attribs)
 
 	if ($module->content)
 	{
-		echo '<' . $moduleTag . ' class="well ' . htmlspecialchars($params->get('moduleclass_sfx'), ENT_COMPAT, 'UTF-8') . $moduleClass . '">';
+		echo '<' . $moduleTag . ' class="panel panel-default ' . htmlspecialchars($params->get('moduleclass_sfx'), ENT_COMPAT, 'UTF-8') . $moduleClass . '">';
 
 			if ($module->showtitle)
 			{
-				echo '<' . $headerTag . ' class="' . $headerClass . '">' . $module->title . '</' . $headerTag . '>';
+				echo '<' . $headerTag . ' class="panel-heading "' . $headerClass . '">' . $module->title . '</' . $headerTag . '>';
 			}
 
 			echo $module->content;
