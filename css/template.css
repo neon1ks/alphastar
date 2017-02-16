@@ -1068,7 +1068,7 @@ input[type="search"]:focus,
 input[type="tel"]:focus,
 input[type="color"]:focus,
 .uneditable-input:focus {
-  border-color: transparent;
+  border: 1px solid #dfd7ca;
   outline: 0;
 }
 input[type="radio"],
