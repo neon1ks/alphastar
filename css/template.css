@@ -3342,10 +3342,6 @@ fieldset[disabled] .btn-link:focus {
 	background-color: #e5e5e5;
 	border-bottom: 1px solid #fff;
 }
-.nav-tabs,
-.nav-pills {
-	*zoom: 1;
-}
 .nav-tabs:before,
 .nav-tabs:after,
 .nav-pills:before,
@@ -3370,30 +3366,37 @@ fieldset[disabled] .btn-link:focus {
 	line-height: 14px;
 }
 .nav-tabs {
-  /*border-bottom: 1px solid #ddd;*/
   border-bottom: 1px solid #dfd7ca;
 }
 .nav-tabs > li {
+  float: left;
   margin-bottom: -1px;
 }
 .nav-tabs > li > a {
-	padding: 10px 16px;
-	line-height: 21px;
-	border: 1px solid transparent;
-	border-radius: 4px 4px 0 0;
+  margin-right: 2px;
+  line-height: 21px;
+  border: 1px solid transparent;
+  border-radius: 4px 4px 0 0;
+}
+.nav-tabs > li > a {
+  background-color: #f8f5f0;
+  border-color: #dfd7ca;
+  color: #98978b;
 }
 .nav-tabs > li > a:hover,
 .nav-tabs > li > a:focus {
-  border-color: #dfd7ca;
+  border-color: #dfd7ca #dfd7ca #dfd7ca;
 }
 .nav-tabs > .active > a,
 .nav-tabs > .active > a:hover,
 .nav-tabs > .active > a:focus {
+  color: #98978b;
+  background-color: #ffffff;
   border: 1px solid #dfd7ca;
   border-bottom-color: transparent;
   cursor: default;
-  text-decoration: none;
-  color: #3e3f3a;
+}
+.nav-tabs > li.disabled > a:hover {
   background-color: #f8f5f0;
 }
 .nav-pills > li > a {
@@ -3424,7 +3427,28 @@ fieldset[disabled] .btn-link:focus {
   border: 1px solid #dfd7ca;
   border-radius: 0;
   color: #3e3f3a;
+  background-color: inherit;
 }
+.nav-tabs.nav-stacked > li > a:hover,
+.nav-tabs.nav-stacked > li > a:focus {
+  background-color: #f8f5f0;
+  border-color: #dfd7ca #dfd7ca #dfd7ca;
+}
+.nav-tabs.nav-stacked > .active > a,
+.nav-tabs.nav-stacked > .active > a:hover,
+.nav-tabs.nav-stacked > .active > a:focus {
+  border: 1px solid #dfd7ca;
+  cursor: default;
+  text-decoration: none;
+  color: #3e3f3a;
+  background-color: #f8f5f0;
+}
+.nav-tabs.nav-stacked > li.disabled > a,
+.nav-tabs.nav-stacked > li.disabled > a:hover {
+  background-color: inherit;
+  color: #dfd7ca;
+}
+
 .nav-tabs.nav-stacked > li:first-child > a {
   border-top-right-radius: 4px;
   border-top-left-radius: 4px;
