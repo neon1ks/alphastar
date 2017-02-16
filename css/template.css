@@ -3813,11 +3813,12 @@ fieldset[disabled] .btn-link:focus {
 	box-shadow: 0 -1px 10px rgba(0,0,0,.1);
 }
 .navbar .nav {
-	position: relative;
-	left: 0;
-	display: block;
-	float: left;
-	margin: 0 10px 0 0;
+  position: relative;
+  left: 0;
+  display: block;
+  float: left;
+  margin: 0;
+  padding-right: 30px;
 }
 .navbar .nav.pull-right {
 	float: right;
@@ -8178,4 +8179,16 @@ a:focus#back-top {
 }
 .readmore {
 	margin-top: 20px;
+}
+
+.jmodedit {
+  padding: 2px 10px;
+  font-size: 12px;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  border-radius: 3px;
+}
+.jmodedit [class^="icon-"],
+.jmodedit [class*=" icon-"] {
+  margin-top: 0;
 }
