@@ -3712,7 +3712,7 @@ fieldset[disabled] .btn-link:focus {
 }
 .navbar .btn,
 .navbar .btn-group {
-	margin-top: 5px;
+  margin-top: 7px;
 }
 .navbar .btn-group .btn,
 .navbar .input-prepend .btn,
