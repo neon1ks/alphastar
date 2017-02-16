@@ -1071,6 +1071,12 @@ input[type="color"]:focus,
   border: 1px solid #dfd7ca;
   outline: 0;
 }
+input[type="search"] {
+  background-color: #f8f5f0;
+}
+input[type="search"]:focus {
+  background-color: #f8f5f0;
+}
 input[type="radio"],
 input[type="checkbox"] {
 	margin: 4px 0 0;
