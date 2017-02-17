@@ -130,7 +130,7 @@ else
           <a class="navbar-brand" href="<?php echo $this->baseurl; ?>/"><?php echo $logo; ?></a>
           <div class="nav-collapse collapse">
             <jdoc:include type="modules" name="position-1" style="none" />
-            <div class="header-search pull-right">
+            <div class="navbar-search pull-right">
               <jdoc:include type="modules" name="position-0" style="none" />
             </div>
           </div><!--/.nav-collapse -->
