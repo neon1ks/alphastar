@@ -80,11 +80,16 @@ JFactory::getDocument()->addScriptDeclaration("
 
 			<div class="tab-content">
 				<div class="tab-pane active" id="editor">
-					<?php echo $this->form->renderField('title'); ?>
-
-					<?php if (is_null($this->item->id)) : ?>
-						<?php echo $this->form->renderField('alias'); ?>
-					<?php endif; ?>
+					<div class="row-fluid">
+						<div class="span6">
+							<?php echo $this->form->renderField('title'); ?>
+						</div>
+						<div class="span6">
+							<?php if (is_null($this->item->id)) : ?>
+								<?php echo $this->form->renderField('alias'); ?>
+							<?php endif; ?>
+						</div>
+					</div>
 
 					<?php echo $this->form->getInput('articletext'); ?>
 				</div>
